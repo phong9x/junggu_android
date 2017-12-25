@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/layout_team_header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/color_blue">
+
+        <ImageView
+            android:id="@+id/img_term_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/header_login_back_margin_left"
+            android:padding="@dimen/back_header_padding"
+            android:src="@drawable/ic_header_back" />
+
+        <com.trams.joonggu_nubigo.view.customview.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/header_login_text_margin_left"
+            android:layout_toRightOf="@id/img_term_back"
+            android:text="@string/term_header_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/header_login_text_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_term_name"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/term_name_height"
+        android:layout_below="@id/layout_team_header"
+        android:background="@color/bg_app">
+
+        <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+            android:id="@+id/tv_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/term_name_margin_left"
+            android:text="@string/term_name_1"
+            android:textColor="@color/term_policy_text_green"
+            android:textSize="@dimen/term_policty_text_size" />
+
+        <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+            android:id="@+id/tv_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_name1"
+            android:text="@string/term_name_2"
+            android:textColor="@color/term_policy_text_gray"
+            android:textSize="@dimen/term_policty_text_size" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/term_policy_line_view_bellow" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/layout_term_name"
+        android:background="@color/white">
+
+        <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+            android:id="@+id/tv_term_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="@dimen/term_name_margin_left"
+            android:paddingRight="@dimen/term_name_margin_left"
+            android:paddingTop="@dimen/term_policty_content_margin_top"
+            android:text="@string/term_content"
+            android:textColor="@color/term_policy_content_color"
+            android:textSize="25sp" />
+
+    </ScrollView>
+
+</RelativeLayout>

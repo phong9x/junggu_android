@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/header_map_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/color_blue">
+
+        <ImageView
+            android:id="@+id/img_category_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="0dp"
+            android:src="@drawable/tab2_selected"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+
+        <com.trams.joonggu_nubigo.view.customview.CustomTextViewBold
+            android:id="@+id/tv_category_map_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="0dp"
+            android:layout_toRightOf="@id/img_category_map"
+            android:textColor="@color/header_text_color"
+            android:textSize="@dimen/header_text_size" />
+
+
+        <ImageView
+            android:id="@+id/img_search_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/header_search_margin_right"
+            android:src="@drawable/search_header_map" />
+
+
+    </RelativeLayout>
+
+
+    <com.trams.joonggu_nubigo.view.customview.HorizontalListView
+        android:id="@+id/lv_map_field"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/header_map_layout"
+        android:layout_gravity="center"
+        android:background="#0e434d" />
+
+    <com.trams.joonggu_nubigo.view.customview.HorizontalListView
+        android:id="@+id/lv_map_accessbility"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/lv_map_field"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:focusable="true" />
+
+    <RelativeLayout
+        android:id="@+id/layout_map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/lv_map_accessbility">
+
+        <com.nhn.android.maps.NMapView
+            android:id="@+id/n_map_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/btn_my_location_map_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="130dp"
+        android:layout_marginRight="@dimen/map_fragment_zoom_margin_right"
+        android:src="@drawable/btn_my_location" />
+
+    <RelativeLayout
+        android:id="@+id/layout_zoom_map_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="@dimen/map_fragment_zoom_margin_right">
+
+        <ImageView
+            android:id="@+id/img_bg_zoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/zoom_bg" />
+
+        <ImageView
+            android:id="@+id/btn_zoom_in_map_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/img_bg_zoom"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:src="@drawable/btn_zoom_in" />
+
+        <ImageView
+            android:id="@+id/btn_zoom_out_map_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/img_bg_zoom"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:src="@drawable/btn_zoom_out" />
+
+    </RelativeLayout>
+
+    <com.trams.joonggu_nubigo.view.customview.StoreViewMap
+        android:id="@+id/store_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="5dp"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/layout_catetory_map"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_map_layout"
+        android:background="@color/white"
+        android:visibility="invisible">
+
+        <GridView
+            android:id="@+id/gr_map_category"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/map_category_padding_left_right"
+            android:layout_marginRight="@dimen/map_category_padding_left_right"
+            android:layout_marginTop="@dimen/map_category_padding_top_bottom"
+            android:background="@android:color/white"
+            android:numColumns="3" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/gr_map_category"
+            android:background="@color/line_view_grid_accessbility_map" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

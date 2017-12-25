@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mypage_login_bg">
+
+    <include
+        android:id="@+id/layout_login_header"
+        layout="@layout/layout_login_header" />
+
+    <com.trams.joonggu_nubigo.view.customview.CustomEditTextNomal
+        android:id="@+id/edtLoginUserName"
+        android:layout_width="@dimen/mypage_login_edt_bg_width"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/login_tv_bg"
+        android:hint="@string/fragment_login_username_hint"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:inputType="text"
+        android:textColor="@color/username_text_color"
+        android:textSize="@dimen/fragment_login_text_size"
+        android:layout_below="@id/layout_login_header" />
+
+    <com.trams.joonggu_nubigo.view.customview.CustomEditTextNomal
+        android:id="@+id/edtLoginPassword"
+        android:layout_width="@dimen/mypage_login_edt_bg_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtLoginUserName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_tv_bg"
+        android:hint="@string/fragment_login_password_hint"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColor="@color/username_text_color"
+        android:textSize="@dimen/fragment_login_text_size" />
+
+    <com.trams.joonggu_nubigo.view.customview.CustomButtonBold
+        android:id="@+id/btnLoginSubmit"
+        android:layout_width="@dimen/mypage_login_edt_bg_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtLoginPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_btn_submit"
+        android:text="@string/fragment_login_submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/fragment_login_text_size"
+        android:textStyle="bold" />
+
+</RelativeLayout>

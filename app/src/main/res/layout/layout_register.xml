@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mypage_login_bg">
+
+    <include
+        android:id="@+id/layout_register_header"
+        layout="@layout/layout_register_header" />
+
+    <com.trams.joonggu_nubigo.view.customview.CustomEditTextNomal
+        android:id="@+id/edtLoginJoinUserName"
+        android:layout_width="@dimen/mypage_login_edt_bg_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_register_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/login_tv_bg"
+        android:hint="@string/fragment_login_username_hint"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColor="@color/username_text_color"
+        android:textSize="@dimen/fragment_login_text_size" />
+
+    <com.trams.joonggu_nubigo.view.customview.CustomEditTextNomal
+        android:id="@+id/edtLoginJoinPassword"
+        android:layout_width="@dimen/mypage_login_edt_bg_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtLoginJoinUserName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_tv_bg"
+        android:hint="@string/fragment_login_password_hint"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColor="@color/username_text_color"
+        android:textSize="@dimen/fragment_login_text_size" />
+
+    <com.trams.joonggu_nubigo.view.customview.CustomEditTextNomal
+        android:id="@+id/edtJoinConfirmPassword"
+        android:layout_width="@dimen/mypage_login_edt_bg_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtLoginJoinPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_tv_bg"
+        android:hint="@string/fragment_login_password_hint"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColor="@color/username_text_color"
+        android:textSize="@dimen/fragment_login_text_size" />
+
+    <RelativeLayout
+        android:id="@+id/layoutTermAndPolicy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtJoinConfirmPassword"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp">
+
+        <CheckBox
+            android:id="@+id/cbTeamPolicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:button="@drawable/cb_login_selector"
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/fragment_login_text_size" />
+
+        <com.trams.joonggu_nubigo.view.customview.CustomTextViewBold
+            android:id="@+id/tvLoginJoinTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/cbTeamPolicy"
+            android:text="@string/fragment_login_join_term"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/fragment_register_term_policy_text_size" />
+
+        <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+            android:id="@+id/tvLoginAnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tvLoginJoinTerm"
+            android:text=" 및 "
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/fragment_register_term_policy_text_size" />
+
+        <com.trams.joonggu_nubigo.view.customview.CustomTextViewBold
+            android:id="@+id/tvLoginJoinPolicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tvLoginAnd"
+            android:text="@string/fragment_login_join_policy"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/fragment_register_term_policy_text_size" />
+
+        <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+            android:id="@+id/tvLoginJoinAgree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tvLoginJoinPolicy"
+            android:text=" 동의 "
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/fragment_register_term_policy_text_size" />
+
+        <com.trams.joonggu_nubigo.view.customview.CustomTextViewBold
+            android:id="@+id/tvLoginJoinNecessary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tvLoginJoinAgree"
+            android:text="(필수)"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/fragment_register_term_policy_text_size" />
+
+    </RelativeLayout>
+
+    <com.trams.joonggu_nubigo.view.customview.CustomButtonBold
+        android:id="@+id/btnLoginJoinSubmit"
+        android:layout_width="@dimen/mypage_login_edt_bg_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutTermAndPolicy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_btn_submit"
+        android:text="@string/fragment_register_submit"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/fragment_login_text_size"
+        android:textStyle="bold" />
+
+</RelativeLayout>

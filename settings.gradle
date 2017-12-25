@@ -1,0 +1,6 @@
+include ':dbgenerator',
+        ':libraries:CustomTextView',
+        ':app',
+        ':libraries',
+        ':libraries:MaterialDialogs:core',
+        ':libraries:MaterialDialogs:commons'

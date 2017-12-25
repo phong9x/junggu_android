@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="header_bg">#009688</color>
+    <color name="header_text_color">#FFFFFF</color>
+    <color name="mypage_menu_text_color">#444444</color>
+    <color name="mypage_line_view_color">#B7B7B7</color>
+    <color name="mypage_login_bg">#0E434D</color>
+    <color name="username_text_color">#444444</color>
+    <color name="submit_login_text_color">#0E434D</color>
+    <color name="mypage_setting_header">#F1F1F1</color>
+    <color name="mypage_setting_header_text_color">#118675</color>
+    <color name="white">#ffffff</color>
+    <color name="bg_app">#f1f1f1</color>
+    <color name="btn_select">#0a5460</color>
+    <color name="color_text_nomal">#444444</color>
+    <color name="black">#000000</color>
+    <color name="line">#acacac</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_blue">#118675</color>
+    <color name="intro_header_color">#444444</color>
+    <color name="intro_bg">#f1f1f1</color>
+    <color name="scrap_bg">#f1f1f1</color>
+    <color name="scrap_line_view_item">#a3a3a3</color>
+    <color name="item_accessbility_selected">#fc5252</color>
+    <color name="item_accessbility_non_selected">#343434</color>
+    <color name="line_view_grid_accessbility_map">#acacac</color>
+    <color name="tab_select_back">#009688</color>
+    <color name="tab_text_press">#ffffff</color>
+    <color name="tab_back">#ffffff</color>
+    <color name="tab_text">#444444</color>
+    <color name="header_login_bg_color">#009688</color>
+    <color name="notice_line_view_color">#c1c1c1</color>
+    <color name="term_policy_text_green">#118675</color>
+    <color name="term_policy_text_gray">#444444</color>
+    <color name="term_policy_line_view_bellow">#b7b7b7</color>
+    <color name="term_policy_content_color">#666666</color>
+    <color name="comment_red_color">#ff5252</color>
+    <color name="comment_text_info">#666666</color>
+    <color name="field_name_color">#343434</color>
+    <color name="field_name_line_between">#e9e9e9</color>
+
+
+</resources>

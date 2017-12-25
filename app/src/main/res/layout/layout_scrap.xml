@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/layout_scrap_header"
+        layout="@layout/layout_scrap_header" />
+
+    <ListView
+        android:id="@+id/lvScrap"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/layout_scrap_header"
+        android:divider="@color/scrap_line_view_item"
+        android:dividerHeight="0.5dp" />
+
+</RelativeLayout>

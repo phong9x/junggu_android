@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/header_bg"
+        android:orientation="vertical">
+
+        <com.trams.joonggu_nubigo.view.customview.CustomTextViewBold
+            android:id="@+id/lblHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imgRight"
+            android:gravity="left"
+            android:paddingLeft="20dp"
+            android:text="잘못된 정보 신고하기"
+            android:textColor="@color/white"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:padding="15dp"
+            android:src="@drawable/ic_close_dialog"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+
+    <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="27dp"
+        android:layout_toLeftOf="@+id/imgRight"
+        android:text="휴대폰번호"
+        android:textColor="@color/color_blue"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtNumberPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="27dp"
+        android:layout_toLeftOf="@+id/imgRight"
+        android:background="@color/white"
+        android:hint="010-1234-5678"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:textColor="#848484"
+        android:textSize="21sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/line" />
+
+
+    <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="27dp"
+        android:layout_toLeftOf="@+id/imgRight"
+        android:text="신고내용"
+        android:textColor="@color/color_blue"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:gravity="top"
+        android:hint="기재 오류로 인해 위의 정보를 신고하 려고 합니다 "
+        android:imeOptions="actionDone"
+        android:lines="5"
+        android:padding="5dp"
+        android:textColor="#848484"
+        android:textSize="21sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/ckbCheck"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:button="@drawable/bg_check_box" />
+
+        <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_toLeftOf="@+id/imgRight"
+            android:text="개인정보취급방침 동의 (필수)"
+            android:textColor="#444444"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnlReport"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_border">
+
+        <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="접수하기"
+            android:textColor="@color/color_blue"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

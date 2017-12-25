@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="43dp"
+    android:background="@color/color_blue"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_horizontal"
+        android:text="휴일"
+        android:textColor="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="20sp" />
+
+</LinearLayout>

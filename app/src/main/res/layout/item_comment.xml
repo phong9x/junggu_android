@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:orientation="horizontal"
+        android:paddingLeft="27dp"
+        android:paddingRight="27dp">
+
+        <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="80dp"
+            android:paddingTop="4dp"
+            android:textColor="@color/color_text_nomal"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="13dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/color_text_nomal" />
+
+        <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:maxWidth="140dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="4dp"
+            android:textColor="@color/color_text_nomal"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <RatingBar
+                android:id="@+id/rb_user_comment"
+                style="@style/StarRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+        android:id="@+id/tvComment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:paddingLeft="27dp"
+        android:paddingRight="27dp"
+        android:textColor="@color/color_text_nomal"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

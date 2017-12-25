@@ -1,0 +1,54 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.trams.joonggu_nubigo"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.0'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'de.greenrobot:greendao:2.0.0'
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile files('libs/universal-image-loader-1.9.4.jar')
+    compile project (':libraries:CustomTextView')
+    compile 'com.naver.maps.open:naver-map-api:2.1.0@aar'
+    compile project(':libraries:MaterialDialogs:core')
+    compile project(':libraries:MaterialDialogs:commons')
+    compile('com.crashlytics.sdk.android:crashlytics:2.5.3@aar') {
+        transitive = true;
+    }
+}

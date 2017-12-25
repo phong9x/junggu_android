@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/header_login_height"
+    android:background="#009688"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/area_store_map_search_header_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_header_back" />
+
+    <LinearLayout
+        android:id="@+id/header_normal_pos2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+            android:id="@id/header_title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="검색 결과 "
+            android:textColor="#ffffff"
+            android:textSize="21sp" />
+
+        <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+            android:id="@id/header_count_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(76)"
+            android:textColor="#ffffff"
+            android:textSize="21sp" />
+    </LinearLayout>
+
+</LinearLayout>

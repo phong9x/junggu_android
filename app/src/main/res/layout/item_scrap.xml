@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/img_thubnail_item_scrap"
+        android:layout_width="@dimen/fragment_scrap_item_height"
+        android:layout_height="@dimen/fragment_scrap_item_height"
+        android:background="@drawable/img_thubnail_map_bg"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/fragment_scrap_item_height"
+        android:layout_marginLeft="@dimen/item_scrap_content_margin_left_right"
+        android:layout_marginRight="@dimen/item_scrap_content_margin_left_right"
+        android:layout_toRightOf="@id/img_thubnail_item_scrap">
+
+        <RelativeLayout
+            android:id="@+id/layout_title_item_scrap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp">
+
+            <com.trams.joonggu_nubigo.view.customview.CustomTextViewBold
+                android:id="@+id/tv_name_item_scrap"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="22.5sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_field_item_scrap"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/layout_footer_item_scrap"
+            android:layout_below="@id/layout_title_item_scrap"
+            android:layout_marginTop="0dp">
+
+            <GridView
+                android:id="@+id/gr_field"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:layout_centerInParent="true"
+                android:numColumns="4" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_footer_item_scrap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="15dp">
+
+            <RatingBar
+                android:id="@+id/rb_item_scrap"
+                style="@style/StarRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:isIndicator="true"
+                android:rating="4" />
+
+            <Button
+                android:id="@+id/btn_view_road_item_scrap"
+                android:layout_width="61dp"
+                android:layout_height="31dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_selector"
+                android:text="로드뷰"
+                android:textColor="#118675"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line_view_item_scrap"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/img_thubnail_item_scrap"
+        android:background="@color/scrap_line_view_item" />
+
+    <com.trams.joonggu_nubigo.view.customview.AccessbilityView
+        android:id="@+id/acv_item_scrap"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/line_view_item_scrap" />
+
+</RelativeLayout>

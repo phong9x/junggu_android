@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true">
+
+    <ImageView
+        android:id="@+id/img_item_map_accessbility"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:src="@drawable/accessibility_type1_selected" />
+
+    <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+        android:id="@+id/tv_item_map_accessbility"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/img_item_map_accessbility"
+        android:text="name"
+        android:maxLines="3"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:textSize="11sp" />
+
+</RelativeLayout>

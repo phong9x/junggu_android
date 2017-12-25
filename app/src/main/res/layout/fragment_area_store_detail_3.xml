@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="138dp"
+        android:background="#ffffff"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/area_store_detail3_create_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="31dp"
+            android:background="@drawable/area_store_detail3_create_btn"
+            android:text="한줄 평가하기"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이 업체에 대해 "
+                android:textColor="#444444"
+                android:textSize="15sp" />
+
+            <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="여러분의 의견을 남겨주세요."
+                android:textColor="#444444"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#acacac" />
+
+    <LinearLayout
+        android:id="@+id/layout_store_ratting_info"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#eeeeee"
+        android:orientation="horizontal">
+
+        <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="평가"
+            android:textColor="@color/comment_red_color"
+            android:textSize="15sp" />
+
+        <RatingBar
+            android:id="@+id/rb_store_comment"
+            style="@style/StarRatingBarRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:isIndicator="true" />
+
+        <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+            android:id="@+id/tv_score_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/comment_red_color"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:background="@color/comment_text_info" />
+
+        <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+            android:id="@+id/tv_total_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/comment_text_info"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lsvComment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:divider="@color/line"
+        android:dividerHeight="1px" />
+
+</LinearLayout>

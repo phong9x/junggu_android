@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">Junggu</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_mypage_header">내 정보</string>
+    <string name="fragment_mypage_login">로그아웃</string>
+    <string name="fragment_mypage_scrap">내스크랩</string>
+
+    <string name="fragment_mypage_not_login">로그인</string>
+    <string name="fragment_mypage_not_scrap">회원가입</string>
+
+
+    <string name="fragment_mypage_notice">공지사항</string>
+    <string name="fragment_mypage_setting">설정</string>
+    <string name="fragment_notice_header">공지사항</string>
+    <string name="fragment_login_username_hint">아이디</string>
+    <string name="fragment_login_password_hint">비밀번호</string>
+    <string name="fragment_register_submit">가입하기</string>
+    <string name="fragment_login_submit">로그인</string>
+    <string name="fragment_login_join_term_policy">이용약관 및 개인정보취급방침 동의 (필수)</string>
+    <string name="fragment_login_join_term">이용약관</string>
+    <string name="fragment_login_join_policy">개인정보취급방침</string>
+    <string name="fragment_login_join_user_pass_null_err_msg">Enter both ID and PW</string>
+    <string name="fragment_login_join_term_policy_err_msg">Agree to User’s Agreement</string>
+    <string name="btn_ok">OK</string>
+    <string name="fragment_mypage_login_header">로그인</string>
+    <string name="fragment_mypage_join_header">회원가입</string>
+
+    <string name="fragment_login_incorrect_username_password">Confirm your ID and PW once again</string>
+    <string name="fragment_mypage_join_signup_success">You have become a member</string>
+    <string name="fragment_mypage_login_fail">Confirm your ID and PW once again</string>
+    <string name="mypage_setting_header">----  및 </string>
+    <string name="fragment_mypage_setting_header">설정</string>
+    <string name="fragment_mypage_notice_header">공지사항</string>
+    <string name="network_error_msg">Network Error !</string>
+    <string name="data_error_msg">Data Error !</string>
+    <string name="request_error_msg">Error !</string>
+    <string name="intro_header">먼저 준비하고, 먼저 행동하는 \n 중구길벗센터</string>
+    <string name="intro_content">안녕하십니까? 소장 김성은입니다.\n
+        중구길벗장애인자립생활센터(이하 중구길벗센터)
+        는 2007년 1월에 개소한 이후로 지역 중증장애인의
+        자립생활 실현을 위한 다양한 직접 서비스를 제공하
+        고 지역사회 변화를 위한 적극적인 활동을 진행하여
+        왔습니다. \n
+        중구길벗센터의 주요사업을 소개해 드리자면 장애
+        인 당사자의 감수성에 의한 동료상담 및 권익옹호활
+        동, 자립생활기술훈련을 위한 자조모임 역량강화사
+        업/활동가양성사업, 일상생활 및 사회생활 보조</string>
+    <string name="fragment_mypage_scrap_header">내 스크랩</string>
+    <string name="title_comment"><b>평점</b>을 터치하여 선택해주세요.</string>
+    <string name="str_done">완료</string>
+    <string name="fragment_map_header">명동</string>
+    <string name="all_field_map">전체</string>
+    <string name="comment_error_grade">Enter a grade and a review completely</string>
+    <string name="comment_error_content">Enter a grade and a review completely</string>
+    <string name="create_comment_error">Log on to My Page</string>
+    <string name="term_header_title">이용약관</string>
+    <string name="term_name_1">중구길벗</string>
+    <string name="term_name_2">이용약관</string>
+    <string name="term_content">제1조(목적) \n \n
+
+이 약관은 중구길벗 장애인자립센터(이하 “중구길벗” 이라 한다)이 운영하는 중구길벗 인터넷사이트(www.jgcil.kr; 이하 “중구길벗” 이라 한다)에서 제공하는 해외 배송 대행 관련 서비스(이하 “서비스” 라 한다)를 이용함에 있어 회사와 회원의 권리, 의무 및 책임사항을 규정함을 목적으로 합니다. \n \n \n
+
+
+제2조(정의)\n \n
+
+① “중구길벗” 이란 회사가 재화 또는 용역(이하 “재화 등” 이라 한다)을 이용자에게 제공하고, 컴퓨터 등 정보 통신 설비를 이용하여 재화 또는 용역을 거래할 수 있도 록 설정한 가상의 영업장을 말하며, 하나의 회원 계정 (ID  및 비밀번호)을 </string>
+    <string name="policy_name_1">중구길벗</string>
+    <string name="policy_name_2">개인정보취급방침</string>
+    <string name="policy_content">1. 총칙 \n \n
+
+가. 개인정보란 생존하는 개인에 관한 정보로서 당해 정 보에 포함되어 있는 이름, 주민등록번호 등의 사항에 의 하여 특정 개인을 식별할 수 있는 정보(당해 정보만으로 는 특정 개인을 식별할 수 없더라도 다른 정보와 용이하 게 결합하여 식별할 수 있는 것을 포함)를 말합니다. \n \n
+
+나. ‘중구 길벗’ 이라 함은 아래 사이트를 말하며, 중구 길 벗 회원이라 함은 그 사이트를 이용할 수 있는 회원을 말합니다. \n \n
+
+다. ‘중구 길벗’ 은 사이트 이용자의 개인정보보호를 매 우 중요시하며, 「정보통신망 이용촉진 및 정보보호에 관 한 법률」 및 「개인정보 보호법」 등  ‘중구 길벗’ 이 준수 하여야 할 관련 법령상의  \n \n</string>
+    <string name="mypage_name_of_list">기본접근성 필터링 설정</string>
+    <string name="accessbility_name_1">장애인전용 \n 주차장</string>
+
+
+    <string name="field_name_1">먹거리 </string>
+    <string name="field_name_2">관광지</string>
+    <string name="field_name_3">숙박</string>
+    <string name="field_name_4">쇼핑</string>
+    <string name="field_name_5">생활</string>
+
+    <string name="detail1_des">서울시 중구</string>
+
+
+</resources>

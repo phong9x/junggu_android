@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0e434d"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_area_header" />
+
+    <LinearLayout
+        android:id="@+id/area_tip_container"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <com.trams.joonggu_nubigo.view.customview.CustomTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="중구 지역"
+            android:textColor="#444444"
+            android:textSize="20sp" />
+
+        <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="을 선택하세요."
+            android:textColor="#444444"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/btn_area_cross"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_area_tip_close" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gv_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0e434d"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:numColumns="3"
+        android:paddingBottom="41dp"
+        android:paddingLeft="9dp"
+        android:paddingRight="9dp"
+        android:paddingTop="41dp" />
+
+</LinearLayout>

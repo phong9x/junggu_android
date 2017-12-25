@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.trams.joonggu_nubigo.view.customview.CustomTextViewBold
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="기본 정보"
+        android:textColor="@color/color_text_nomal"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="주소"
+        android:textColor="@color/color_blue"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+        android:id="@+id/store_detail_1_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="@color/color_text_nomal"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <Button
+            android:id="@+id/area_store_view_road_btn"
+            android:layout_width="35dp"
+            android:layout_height="25dp"
+            android:background="@drawable/btn_selector"
+            android:text="지번"
+            android:textColor="#118675"
+            android:textSize="15sp" />
+
+        <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+            android:id="@+id/tvLotNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/color_text_nomal"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="전화"
+                android:textColor="@color/color_blue"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="25dp"
+                android:text="운영시간"
+                android:textColor="@color/color_blue"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="25dp"
+                android:text="휴일"
+                android:textColor="@color/color_blue"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="25dp"
+                android:text="업데이트일"
+                android:textColor="@color/color_blue"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="7"
+            android:orientation="vertical">
+
+            <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+                android:id="@+id/store_detail_1_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/color_text_nomal"
+                android:textSize="18sp" />
+
+            <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+                android:id="@+id/store_detail_1_service_hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/color_text_nomal"
+                android:textSize="18sp" />
+
+            <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+                android:id="@+id/store_detail_1_holiday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/color_text_nomal"
+                android:textSize="18sp" />
+
+            <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+                android:id="@+id/store_detail_1_latest_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/color_text_nomal"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+        android:id="@+id/store_detail_1_other_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="41dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="@color/color_text_nomal"
+        android:textSize="18sp" />
+
+    <com.trams.joonggu_nubigo.view.custome.ExpandableHeightGridView
+        android:id="@+id/grvTags"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="41dp"
+        android:numColumns="3"
+        android:paddingBottom="35dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:verticalSpacing="10dp">
+
+    </com.trams.joonggu_nubigo.view.custome.ExpandableHeightGridView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="137dp"
+        android:background="@color/bg_app">
+
+        <LinearLayout
+            android:id="@+id/lnlReport"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_border">
+
+            <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="잘못된 정보 신고하기"
+                android:textColor="@color/color_blue"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

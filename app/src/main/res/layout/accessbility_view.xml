@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:weightSum="6">
+
+    <ImageView
+        android:id="@+id/imgAccessbility1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:src="@drawable/accessibility_type1_normal" />
+
+    <ImageView
+        android:id="@+id/imgAccessbility2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:src="@drawable/accessibility_type2_normal" />
+
+
+    <ImageView
+        android:id="@+id/imgAccessbility3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:src="@drawable/accessibility_type3_normal" />
+
+    <ImageView
+        android:id="@+id/imgAccessbility4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:src="@drawable/accessibility_type4_normal" />
+
+    <ImageView
+        android:id="@+id/imgAccessbility5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:src="@drawable/accessibility_type5_normal" />
+
+    <ImageView
+        android:id="@+id/imgAccessbility6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:src="@drawable/accessibility_type6_normal" />
+</LinearLayout>

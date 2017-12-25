@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.trams.joonggu_nubigo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name="com.trams.joonggu_nubigo.common.AppController"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.trams.joonggu_nubigo.view.activities.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.trams.joonggu_nubigo.view.activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.trams.joonggu_nubigo.view.activities.AreaStoreMapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.trams.joonggu_nubigo.view.activities.AreaStoreDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.trams.joonggu_nubigo.view.activities.CommentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.trams.joonggu_nubigo.view.activities.AreaStoreDetail1MapActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.trams.joonggu_nubigo.view.activities.LoginActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.trams.joonggu_nubigo.view.activities.RegisterActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.trams.joonggu_nubigo.view.activities.NoticeActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.trams.joonggu_nubigo.view.activities.SettingActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.trams.joonggu_nubigo.view.activities.ScrapActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="ae69fd96a24064f6eece8501b6bdeeca3b5820e7" />
+    </application>
+
+</manifest>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/lnlPager"
+                android:layout_width="fill_parent"
+                android:layout_height="340dp"
+                android:visibility="visible">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" />
+
+                <com.trams.joonggu_nubigo.view.custome.SimpleViewPagerIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:padding="10dip" />
+
+                <ImageView
+                    android:id="@+id/img_back_detail1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="20dp"
+                    android:src="@drawable/ic_back" />
+
+                <ImageView
+                    android:id="@+id/img_next_detail1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="20dp"
+                    android:src="@drawable/ic_next" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lnlSetup"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="3"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:id="@+id/lnlBasic"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/area_store_detail_1_clip_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:src="@drawable/ic_scrap_off" />
+
+                    <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+                        android:id="@+id/lblBasic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="8dp"
+                        android:text="스크랩"
+                        android:textColor="@color/color_text_nomal"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnlAccessible"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/area_store_detail_1_make_a_phone_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:src="@drawable/ic_phone" />
+
+                    <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="8dp"
+                        android:text="전화"
+                        android:textColor="@color/color_text_nomal"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnlPolite"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/area_store_detail_1_show_map_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:src="@drawable/ic_map" />
+
+                    <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="8dp"
+                        android:text="지도"
+                        android:textColor="@color/color_text_nomal"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/bg_app"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="35dp"
+                    android:orientation="horizontal">
+
+                    <RatingBar
+                        android:id="@+id/star"
+                        style="@style/StarRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="true"
+                        android:rating="4" />
+
+                    <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+                        android:id="@+id/total_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="20dp"
+                        android:text="(8명)"
+                        android:textColor="@color/color_text_nomal"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="20dp"
+                    android:text="각종 공연 및 전시를 관람할 수 있습니다."
+                    android:textColor="@color/color_text_nomal"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <include layout="@layout/layout_accessibility_tab" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line" />
+
+            <include layout="@layout/layout_area_store_detail_bottom" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

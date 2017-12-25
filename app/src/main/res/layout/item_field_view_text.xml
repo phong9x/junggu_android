@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp">
+
+    <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+        android:id="@+id/tv_field_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/field_name_1"
+        android:textColor="@color/field_name_color"
+        android:textSize="@dimen/field_name_size" />
+
+    <View
+        android:id="@+id/v_field_name"
+        android:layout_width="@dimen/field_line_width"
+        android:layout_height="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@color/field_name_line_between" />
+</RelativeLayout>

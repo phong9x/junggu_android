@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@color/header_bg"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="20dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_header_back" />
+
+        <com.trams.joonggu_nubigo.view.customview.CustomTextViewBold
+            android:id="@+id/lblHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imgRight"
+            android:layout_toRightOf="@+id/imgLeft"
+            android:gravity="left"
+            android:paddingLeft="15dp"
+            android:text="한줄 평가하기"
+            android:textColor="@color/white"
+            android:textSize="21sp" />
+
+        <com.trams.joonggu_nubigo.view.customview.CustomTextViewBold
+            android:id="@+id/tvRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="완료"
+            android:textColor="@color/white"
+            android:textSize="21sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/title_comment"
+        android:textColor="@color/color_text_nomal"
+        android:textSize="21sp"
+        android:visibility="visible" />
+
+    <RatingBar
+        android:id="@+id/rtStart"
+        style="@style/StarRatingBarCommment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="15dp"
+        android:stepSize="1" />
+
+    <EditText
+        android:id="@+id/edtComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_border_edittext"
+        android:gravity="top"
+        android:hint="이 업체에 대한 평가를 입력해주세요."
+        android:lines="6"
+        android:padding="15dp"
+        android:textColor="@color/color_text_nomal"
+        android:textColorHint="@color/color_text_nomal" />
+
+
+</LinearLayout>

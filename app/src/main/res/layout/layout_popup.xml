@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cc000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/search_box_container"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="17.5dp">
+
+        <com.trams.joonggu_nubigo.view.customview.CustomEditTextNomal
+            android:id="@+id/search_box_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="업체명 또는 주소 검색"
+            android:textColorHint="#444444"
+            android:textSize="21sp" />
+
+        <ImageView
+            android:id="@+id/search_box_search_func"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_search_popup" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rest_of_popup_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" />
+</LinearLayout>

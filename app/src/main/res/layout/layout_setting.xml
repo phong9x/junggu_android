@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mypage_setting_header">
+
+    <include
+        android:id="@+id/layout_setting_header"
+        layout="@layout/layout_setting_header" />
+
+    <RelativeLayout
+        android:id="@+id/layoutMypageSettingHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/layout_setting_header">
+
+        <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+            android:id="@+id/tvSettingHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/mypage_name_of_list"
+            android:textColor="@color/mypage_setting_header_text_color"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lvMypageSetting"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/btn_setting_save"
+        android:layout_below="@id/layoutMypageSettingHeader"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_setting_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/mypage_setting_save" />
+
+
+</RelativeLayout>

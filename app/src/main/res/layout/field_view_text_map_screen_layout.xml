@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_field_name_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/field_name_layout_margin_left"
+        android:gravity="center">
+
+        <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+            android:id="@+id/tv_field_name_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/field_name_1"
+            android:textColor="@color/field_name_color"
+            android:textSize="@dimen/field_name_size_map" />
+
+        <View
+            android:id="@+id/v_field_name_1"
+            android:layout_width="@dimen/field_line_width"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/map_line_view_margin_top_bottom"
+            android:layout_marginLeft="@dimen/field_line_margin_left"
+            android:layout_marginTop="@dimen/map_line_view_margin_top_bottom"
+            android:background="@color/field_name_line_between"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_field_name_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/field_name_layout_margin_left"
+        android:gravity="center">
+
+        <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+            android:id="@+id/tv_field_name_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/field_name_2"
+            android:textColor="@color/field_name_color"
+            android:textSize="@dimen/field_name_size_map" />
+
+        <View
+            android:id="@+id/v_field_name_2"
+            android:layout_width="@dimen/field_line_width"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/map_line_view_margin_top_bottom"
+            android:layout_marginLeft="@dimen/field_line_margin_left"
+            android:layout_marginTop="@dimen/map_line_view_margin_top_bottom"
+            android:background="@color/field_name_line_between"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_field_name_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/field_name_layout_margin_left"
+        android:gravity="center">
+
+        <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+            android:id="@+id/tv_field_name_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/field_name_3"
+            android:textColor="@color/field_name_color"
+            android:textSize="@dimen/field_name_size_map" />
+
+        <View
+            android:id="@+id/v_field_name_3"
+            android:layout_width="@dimen/field_line_width"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/map_line_view_margin_top_bottom"
+            android:layout_marginLeft="@dimen/field_line_margin_left"
+            android:layout_marginTop="@dimen/map_line_view_margin_top_bottom"
+            android:background="@color/field_name_line_between"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_field_name_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/field_name_layout_margin_left"
+        android:gravity="center">
+
+        <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+            android:id="@+id/tv_field_name_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/field_name_4"
+            android:textColor="@color/field_name_color"
+            android:textSize="@dimen/field_name_size_map" />
+
+        <View
+            android:id="@+id/v_field_name_4"
+            android:layout_width="@dimen/field_line_width"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/map_line_view_margin_top_bottom"
+            android:layout_marginLeft="@dimen/field_line_margin_left"
+            android:layout_marginTop="@dimen/map_line_view_margin_top_bottom"
+            android:background="@color/field_name_line_between"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_field_name_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/field_name_layout_margin_left"
+        android:gravity="center">
+
+        <com.trams.joonggu_nubigo.view.customview.CustomTextViewNomal
+            android:id="@+id/tv_field_name_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/field_name_5"
+            android:textColor="@color/field_name_color"
+            android:textSize="@dimen/field_name_size_map" />
+
+        <View
+            android:id="@+id/v_field_name_5"
+            android:layout_width="@dimen/field_line_width"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="@dimen/map_line_view_margin_top_bottom"
+            android:layout_marginLeft="@dimen/field_line_margin_left"
+            android:layout_marginTop="@dimen/map_line_view_margin_top_bottom"
+            android:background="@color/field_name_line_between"
+            android:gravity="center" />
+    </LinearLayout>
+
+
+</LinearLayout>

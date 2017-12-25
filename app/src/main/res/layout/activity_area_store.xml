@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/area_store_header_normal_container"
+        layout="@layout/layout_area_store_header" />
+
+    <include
+        android:id="@+id/area_store_header_search_container"
+        layout="@layout/layout_area_store_search_header" />
+
+    <com.trams.joonggu_nubigo.view.customview.HorizontalListView
+        android:id="@+id/area_store_field_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="#0a5460" />
+
+    <ListView
+        android:id="@+id/area_store_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
